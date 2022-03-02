@@ -1,0 +1,19 @@
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+body {
+  background-image: url("https://images.wallpapersden.com/image/download/city-building-sunshine-pixel-art_a2ZnameUmZqaraWkpJRmbmdlrWZlbWU.jpg");
+  background-color: #cccccc;
+ }
+
+ 
+ img {
+
+  margin-left: 60px;
+  margin-top: 50px;
+}
