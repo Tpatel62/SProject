@@ -1,13 +1,22 @@
-.bg-image-vertical {
-    position: relative;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: auto 100%;
-  }
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+
+img {
+
+  margin-left: 60px;
+  margin-top: 50px;
+}
+
+
+
+body {
+  background-image: url("https://images.wallpapersden.com/image/download/city-building-sunshine-pixel-art_a2ZnameUmZqaraWkpJRmbmdlrWZlbWU.jpg");
+  background-color: #cccccc;
+ }
   
-  @media (min-width: 1025px) {
-    .h-custom-2 {
-      height: 100%;
-    }
-  }
