@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="blogs.css">
+    
+    <title>Blogs</title>
+</head>
+<body>
+    <center>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <a class="navbar-brand" href="#">ATLAS</a>
+          
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="blogs.html">Blogs <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trip Planner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SignInPage.html">
+                            <img class="sign" src="https://cdn3.iconfinder.com/data/icons/login-6/512/LOGIN-10-512.png" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+    </center>
+    <p class="heading"><span>For people who love to travel</span></p>
+    <button onclick="displayForm()">Add blogs</button>
+    <div id="form" class="form" style="display: none;">
+        
+        <div class="file-input">
+            <input type="file" id="file" class="file" onchange="onFileSelected(event)" accept="image/*">
+            <label for="file">
+              Select file
+            </label>
+          </div>       
+          <label for="text" class="text">Text:</label>
+        <input type="text" id="text" class="caption"/><br>
+        <label for="location" class="text">Location:</label>
+        <input type="text"  id="location" class="location" style="margin-right: 50px;"/><br>
+        <input type="submit" class="sbmt" onclick="displayRecentPost()">
+    </div>
+    <div class="recentPost" id="recentPost" style="display:none;">
+        <p class="heading"><span>Recent Post</span> </p>
+<div class="line">
+        <p class="block" id="block1" style="display:none;">
+            <span class="blck-img">
+        <img id="img1" height="250" width="230" /><br>
+    </span>
+    
+        <span id="date1"></span><br>
+                <span id="text1"></span><br>
+                <span id="location1"></span>
+    
+        </p>
+       
+        <p class="block" id="block2" style="display:none;">
+            <span class="blck-img" >
+        <img id="img2" height="250" width="230"/><br>
+            </span>
+        <span id="date2"></span><br>
+                <span id="text2"></span><br>
+                <span id="location2"></span><br>
+        </p>
+        <p class="block" id="block3" style="display:none;">
+            <span class="blck-img" >
+            <img id="img3" height="250" width="230"><br>
+            </span>
+            <span id="date3"></span><br>
+                <span id="text3"></span><br>
+                <span id="location3"></span><br>
+            </p>
+            <p class="block" id="block4" style="display:none;">
+                <span class="blck-img" >
+                <img id="img4" height="250" width="230"/><br>
+            </span>
+                <span id="date4"></span><br>
+                <span id="text4"></span><br>
+                <span id="location4"></span><br>
+                
+                </p>
+</div>
+    </div>
+</body>
+<script src="blogs.js"></script>
+</html>
