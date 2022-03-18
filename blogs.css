@@ -138,3 +138,47 @@ body {
   background-color: white;
   background-image: url("https://images.wallpapersden.com/image/download/city-building-sunshine-pixel-art_a2ZnameUmZqaraWkpJRmbmdlrWZlbWU.jpg");
 }
+
+/*  */
+
+#myBtn{
+  margin-top: 1%;
+}
+
+#btnCancel{
+  
+}
+
+#btnupload{
+  
+}
+
+#cap{
+  margin-top: 1%;
+}
+
+.imgSelect{
+  border: none;
+  outline-color: none;
+}
+
+#contains{
+  padding: 20px;
+  display: inline-block;
+  position: relative;
+  /* border: solid 2px black; */
+}
+
+.postedImgs{
+  width: 300px;
+  height: 350px;
+}
+
+.caps{
+  /* position: absolute; */
+  /* border: solid 2px white; */
+  width: 300px;
+  height: fit-content;
+  background-color: skyblue;
+  font-size: 25px;
+}
