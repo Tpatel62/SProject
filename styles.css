@@ -1,0 +1,62 @@
+body {
+    width: 95%;
+    height: 95%;
+}
+
+p {
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+label {
+    margin-bottom: 0;
+}
+
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+input {
+    font-size: 1rem;
+}
+
+.user-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.25rem;
+    margin-top: 1rem;
+}
+
+.card {
+    background: #1f2124;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.767);
+    border-radius: 5px;
+    padding: 2px;
+    text-align: center;
+    color: white;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    opacity: 1;
+}
+
+.card>.header {
+    margin-bottom: 0.25rem;
+}
+
+.card>.body {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.hide {
+    display: none;
+}
